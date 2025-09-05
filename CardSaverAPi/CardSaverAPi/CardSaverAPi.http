@@ -1,0 +1,6 @@
+@CardSaverAPi_HostAddress = http://localhost:5167
+
+GET {{CardSaverAPi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
