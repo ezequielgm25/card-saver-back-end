@@ -38,6 +38,8 @@ namespace CardSaverAPi.Services
         {
             /* getting all the cards then adding on top and saving */
             var cards = GetAll();
+            //generating a unique id
+            card.Id = Guid.NewGuid().ToString();
             cards.Add(card);
             Save(cards);
         }
